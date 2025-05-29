@@ -1,0 +1,10 @@
+
+<h2>Список постів</h2>
+<ul>
+  <% posts.forEach(post => { %>
+    <li>
+      <a href="/posts/<%= post._id %>"><%= post.title %></a> —
+      автор: <%= post.author.username %>
+    </li>
+  <% }) %>
+</ul>

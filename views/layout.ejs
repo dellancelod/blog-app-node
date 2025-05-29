@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Блог</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="/">Мій Блог</a></h1>
+    <nav>
+      <% if (user) { %>
+        Привіт, <%= user.username %> |
+        <a href="/posts">Пости</a> |
+        <a href="/posts/new">Новий пост</a> |
+        <a href="/profile">Профіль</a> |
+        <a href="/logout">Вийти</a>
+      <% } else { %>
+        <a href="/login">Увійти</a> |
+        <a href="/register">Реєстрація</a>
+      <% } %>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <% if (messages && messages.error) { %>
+      <p style="color: red;"><%= messages.error %></p>
+    <% } %>
+    <%- body %>
+  </main>
+
+  <footer><hr><p>© 2025</p></footer>
+</body>
+</html>
