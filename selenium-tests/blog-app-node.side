@@ -1,0 +1,453 @@
+{
+  "id": "0db064fe-93fd-45d0-b6cf-8c840867e4d6",
+  "version": "2.0",
+  "name": "blog-app-node",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "b96109fe-3b7f-4342-bd80-2eb5ac3f86c7",
+    "name": "test",
+    "commands": [{
+      "id": "42744523-0d4d-451f-9b39-186049b169f9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b9eed3e-bb6f-4b5d-811a-7a369dfbf772",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d485e3a7-d4a9-4467-ad46-513a24f2ac90",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Мій Блог",
+      "targets": [
+        ["linkText=Мій Блог", "linkText"],
+        ["css=h1 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Мій Блог')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мій Блог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "756ccee4-5b08-4396-8b59-6b6d157f709a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Увійти",
+      "targets": [
+        ["linkText=Увійти", "linkText"],
+        ["css=nav > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Увійти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Увійти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10580bd2-8505-44c3-9009-a38c8c15ed20",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Увійти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5069cff8-c7b9-41d0-a49c-f6546d6ab97f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Мій Блог",
+      "targets": [
+        ["linkText=Мій Блог", "linkText"],
+        ["css=h1 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Мій Блог')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мій Блог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "340c44ba-c568-4858-8814-e4909e038a9f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вийти",
+      "targets": [
+        ["linkText=Вийти", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Вийти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Вийти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f907662d-af34-43c2-93e8-1b8e351c89c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Реєстрація",
+      "targets": [
+        ["linkText=Реєстрація", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Реєстрація')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Реєстрація')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56bfede4-c267-4359-8bef-7190068db3ee",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "danil.svetaylo@gmail.com"
+    }, {
+      "id": "66af827b-359f-49a6-b014-36a0efeeaaf6",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "3bf5b49e-9e83-44d1-ac6e-b8505cb19527",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2cb7bf4-5cf5-424f-9b31-aaaa225701cc",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "danil.svetaylo@gmail.com"
+    }, {
+      "id": "de516f5d-d98b-44ab-8d18-de8fe4e3085a",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cf9644c-e03e-478b-bf38-a8e581b6b05c",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "new"
+    }, {
+      "id": "804cc9be-f111-43d4-ad2c-a8ec040a35f4",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_DOWN}"
+    }, {
+      "id": "8f8b88a0-0df1-4df5-baae-ebf596249437",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "new"
+    }, {
+      "id": "7f04d928-1a41-4c97-bb62-02027438318c",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ac70378-7f9b-42a2-8049-4590e085e347",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "new@gmail.com"
+    }, {
+      "id": "efb96268-c613-4793-990e-2198a8b588e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Зареєструватися')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6c70aa3-de80-4cc5-867d-4ffd2ff93661",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "danil.svetaylo@gmail.com"
+    }, {
+      "id": "9b99bfa0-c895-4221-aa2a-11c2a6af5c5f",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "fb229368-81e4-44b4-8318-f69ada190b72",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Увійти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b402af4b-4731-449d-96a5-2d323ac779ba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Пости",
+      "targets": [
+        ["linkText=Пости", "linkText"],
+        ["css=nav > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Пости')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/posts')]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Пости')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "311db7d0-a940-4a7c-a370-c7f5f027fab8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Новий пост",
+      "targets": [
+        ["linkText=Новий пост", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Новий пост')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/posts/new')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Новий пост')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25b12101-f17c-4be1-a6bb-56ac4f73885e",
+      "comment": "",
+      "command": "click",
+      "target": "css=main",
+      "targets": [
+        ["css=main", "css:finder"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "188bff73-6f0d-4f99-a303-58a884723edf",
+      "comment": "",
+      "command": "click",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fab2e398-0784-47bb-ac11-6ec3b4a8c091",
+      "comment": "",
+      "command": "type",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "be138c31-4ecf-401e-8905-41c4cccc8918",
+      "comment": "",
+      "command": "click",
+      "target": "name=content",
+      "targets": [
+        ["name=content", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='content']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53d7e602-4a9b-4da4-b571-efcde2bc57a5",
+      "comment": "",
+      "command": "type",
+      "target": "name=content",
+      "targets": [
+        ["name=content", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='content']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "e267bf1b-fd40-4552-898d-6f39c49c5d5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Опублікувати')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c032464c-8a1a-4267-bf64-bc9eeefbd336",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Перший пост!",
+      "targets": [
+        ["linkText=Перший пост!", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Перший пост!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/posts/683860a4623f179e1dc015dd')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перший пост!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74410ed4-2c9d-4613-a7a8-25927b9af81f",
+      "comment": "",
+      "command": "click",
+      "target": "name=content",
+      "targets": [
+        ["name=content", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='content']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "046f88ef-52a9-4c37-bd30-f7946db52307",
+      "comment": "",
+      "command": "type",
+      "target": "name=content",
+      "targets": [
+        ["name=content", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='content']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "8fde80d0-b3d2-4835-90a9-c0008137e07d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Надіслати')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e17d75fd-62af-45a4-8c4d-1f6cf356f2d8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Профіль",
+      "targets": [
+        ["linkText=Профіль", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Профіль')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/profile')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Профіль')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c29b26f-36cb-4849-9dc3-8d152e37822d",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cadae0bc-fa2e-40dd-ae57-8c6dcda6196f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b96109fe-3b7f-4342-bd80-2eb5ac3f86c7"]
+  }],
+  "urls": [],
+  "plugins": []
+}
