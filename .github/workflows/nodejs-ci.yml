@@ -31,6 +31,12 @@ jobs:
           name: coverage-report
           path: coverage
 
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v1.8
         with:
